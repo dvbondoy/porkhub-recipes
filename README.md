@@ -1,2 +1,3 @@
-# porkhub-recipes
-recipes for all pork
+# PorkHub Recipes
+
+The only hub you need for all your pork recipes.
