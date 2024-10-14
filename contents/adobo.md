@@ -1,7 +1,7 @@
 # Adobong Baboy
 
 <!-- ![alt text](../images/adobo.jpg) -->
-![alt text](../images/adobo.jpg)
+![alt text](img/adobo.jpg)
 ## Ingredients
 - [ ] 2 lbs pork belly (note 1)
 - [ ] 2 tablespoons garlic (note 2)
