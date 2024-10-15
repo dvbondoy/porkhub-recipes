@@ -16,6 +16,10 @@
     color: var(--c1);
 }
 
+.social {
+  text-align: center;
+}
+
 .box {
 --mask:
     radial-gradient(34.99px at 50% calc(100% - 48px),#000 99%,#0000 101%) calc(50% - 60px) 0/120px 100%,
