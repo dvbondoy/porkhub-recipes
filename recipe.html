@@ -8,6 +8,15 @@
     <script type="module" src="https://cdn.jsdelivr.net/npm/zero-md@3?register"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <!-- <script src="js/script.js"></script> -->
+     <!-- <style>
+        img {
+            display: block;
+            float: none;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+     </style> -->
    <title>Document</title>
 </head>
 <body>
@@ -47,7 +56,20 @@
         };
 
         console.log(obj.therecipe);
-        $("#target").html("<zero-md class='template1' src='contents/"+obj.therecipe+"'></zero-md>");
+        $("#target").html("<zero-md class='template1' src='contents/"+obj.therecipe+"'><template> \
+            <style> \
+            h1 { \
+                text-align: center; \
+            } \
+            img { \
+                display: block; \
+                float: none; \
+                margin-left: auto; \
+                margin-right: auto; \
+                width: 50%; \
+            } \
+            </style> \
+            </template></zero-md>");
     });
     
 </script>

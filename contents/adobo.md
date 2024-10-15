@@ -1,7 +1,11 @@
 # Adobong Baboy
 
 <!-- ![alt text](../images/adobo.jpg) -->
-![alt text](img/adobo.jpg)
+![adobo](img/adobo.jpg)
+
+## Description
+Considered by some as the pride of Filipino cuisine, Pork Adobo is definitely a favorite among many around the world. For this, we cook pork slices in a perfect mix of soy sauce, vinegar, and garlic to make this savory and sour viand. And I’ve got to say, it’s definitely a great way to introduce the world to what Pinoy cooks can make! But actually, there are other renditions of adobo. 
+
 ## Ingredients
 - [ ] 2 lbs pork belly (note 1)
 - [ ] 2 tablespoons garlic (note 2)
