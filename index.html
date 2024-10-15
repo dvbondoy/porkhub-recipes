@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <script type="module" src="https://cdn.jsdelivr.net/npm/zero-md@3?register"></script>
-    <script src="js/script.js"></script>
+    <!-- <script src="js/script.js"></script> -->
     <title>PorkHub - Recipes</title>
 </head>
 
@@ -55,8 +55,8 @@
                 <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Type to search">
                 <!-- <zero-md src="contents/list.md"></zero-md> -->
                 <ul id="myUL">
-                    <!-- <li><a href="https://dvbondoy.github.io/porkhub-recipes/recipe.html?file=adobo.md">Pork Adobo</a> <small>some note</small></li> -->
-                    <li><a href="../recipe.html?file=adobo.md">Pork Adobo</a> <small>some text here</small></li>
+                    <li><a href="https://dvbondoy.github.io/porkhub-recipes/recipe.html?file=adobo.md">Pork Adobo</a> <small>some note</small></li>
+                    <li><a href="../recipe.html?file=adobo.md">Test</a> <small>some text here</small></li>
                 </ul>
             </div>
         </div>
@@ -64,27 +64,27 @@
     <footer class="container">
         footer here
     </footer>
-    <script>
-        // function myFunction() {
-        // // Declare variables
-        // var input, filter, ul, li, a, i, txtValue;
-        // input = document.getElementById('myInput');
-        // filter = input.value.toUpperCase();
-        // ul = document.getElementById("myUL");
-        // li = ul.getElementsByTagName('li');
-
-        // // Loop through all list items, and hide those who don't match the search query
-        // for (i = 0; i < li.length; i++) {
-        //     a = li[i].getElementsByTagName("a")[0];
-        //     txtValue = a.textContent || a.innerText;
-        //     if (txtValue.toUpperCase().indexOf(filter) > -1) {
-        //     li[i].style.display = "";
-        //     } else {
-        //     li[i].style.display = "none";
-        //     }
-        // }
-        // }
-    </script>
 </body>
 
+<script>
+    function myFunction() {
+    // Declare variables
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById('myInput');
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName('li');
+
+    // Loop through all list items, and hide those who don't match the search query
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        li[i].style.display = "";
+        } else {
+        li[i].style.display = "none";
+        }
+    }
+    }
+</script>
 </html>
