@@ -1,10 +1,19 @@
+:root {
+  --c1: #E88D67;
+  --c2: #F3F7EC;
+  --c3: #006989;
+  --c4: #005C78;
+}
+
 .logo-img{
     width: 200px;
     height: auto;
+    border-radius: 10px;
 }
 
 .header-text {
     text-align: center;
+    color: var(--c1);
 }
 
 .box {
@@ -16,17 +25,22 @@
 }
 
 .top {
-    clip-path: polygon(0 0,100% 0,100% calc(100% - 50px),50% 100%,0 calc(100% - 50px));
-    background-color: aliceblue;
-    padding-bottom: 50px;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
+  clip-path: polygon(0 0,100% 0,100% calc(100% - 50px),50% 100%,0 calc(100% - 50px));
+  background-color: var(--c3);
+  padding-bottom: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.top a{
+  color: white;
+}
+
 .bottom {
-clip-path: polygon(0 0,50% 50px,100% 0,100% 100%,0 100%);
-margin-top: -70px;
-background-color: azure;
-padding-top: 50px;
-padding-left: 10px;
-padding-right: 10px;
+  clip-path: polygon(0 0,50% 50px,100% 0,100% 100%,0 100%);
+  margin-top: -70px;
+  background-color: var(--c2);
+  padding-top: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
