@@ -47,6 +47,17 @@ article img{
   border-top-right-radius: 20px;
 }
 
+.about h1{
+  text-align: center;
+}
+
+.who-h1 {
+  text-align: center;
+}
+
+.who p {
+  text-align: left;
+}
 
 .about-pic img {
   width: 200px;
