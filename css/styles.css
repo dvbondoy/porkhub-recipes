@@ -11,6 +11,12 @@
     border-radius: 10px;
 }
 
+.pork-head {
+  width: 50px;
+  height: 50px;
+  opacity: 0.5;
+}
+
 .header-text {
     text-align: center;
     color: var(--c1);
@@ -38,6 +44,30 @@ article img{
 }
 
 .top {
+  --top: 
+   linear-gradient(#000 0 0) top/100% calc(100% - 50px) no-repeat,
+   radial-gradient(farthest-side,#000 98%,#0000) bottom/100px 100px no-repeat;
+  -webkit-mask: var(--top);
+          mask: var(--top);
+  background-color: var(--c3);
+  padding-bottom: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.bottom {
+  --bottom: radial-gradient(calc(10px + 50px) at 50% -10px,#0000 98%,#000);
+  -webkit-mask: var(--bottom);
+    mask: var(--bottom);
+    margin-top: -85px;
+    background-color: var(--c2);
+    padding-top: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* .top {
   clip-path: polygon(0 0,100% 0,100% calc(100% - 50px),50% 100%,0 calc(100% - 50px));
   background-color: var(--c3);
   padding-bottom: 40px;
@@ -46,6 +76,15 @@ article img{
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
+
+.bottom {
+  clip-path: polygon(0 0,50% 50px,100% 0,100% 100%,0 100%);
+  margin-top: -85px;
+  background-color: var(--c2);
+  padding-top: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+} */
 
 .about h1{
   text-align: center;
@@ -75,11 +114,3 @@ article img{
   color: white;
 }
 
-.bottom {
-  clip-path: polygon(0 0,50% 50px,100% 0,100% 100%,0 100%);
-  margin-top: -85px;
-  background-color: var(--c2);
-  padding-top: 50px;
-  padding-left: 10px;
-  padding-right: 10px;
-}
