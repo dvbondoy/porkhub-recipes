@@ -16,8 +16,17 @@
     color: var(--c1);
 }
 
+article img{
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
 .social {
   text-align: center;
+}
+
+.social small {
+  margin-right: 15px;
 }
 
 .box {
