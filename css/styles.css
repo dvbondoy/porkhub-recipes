@@ -45,8 +45,8 @@ article img{
 
 .top {
   --top: 
-   linear-gradient(#000 0 0) top/100% calc(100% - 50px) no-repeat,
-   radial-gradient(farthest-side,#000 98%,#0000) bottom/100px 100px no-repeat;
+  linear-gradient(#000 0 0) top/100% calc(100% - 50px) no-repeat,
+  radial-gradient(farthest-side,#000 98%,#0000) bottom/100px 100px no-repeat;
   -webkit-mask: var(--top);
           mask: var(--top);
   background-color: var(--c3);
@@ -56,6 +56,22 @@ article img{
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
+.top2 {
+  z-index: 1; /* Make sure it appears above other elements */
+  position: relative; /* Z-index works only if the element has position */
+  --top: 
+    linear-gradient(#000 0 0) top/100% calc(100% - 50px) no-repeat,
+    radial-gradient(farthest-side,#000 98%,#0000) bottom/100px 100px no-repeat;
+  -webkit-mask: var(--top);
+  mask: var(--top);
+  background-color: var(--c3, #f0f0f0); /* Default background color */
+  padding-bottom: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
 .bottom {
   --bottom: radial-gradient(calc(10px + 50px) at 50% -10px,#0000 98%,#000);
   -webkit-mask: var(--bottom);
@@ -112,5 +128,42 @@ article img{
 
 .top a{
   color: white;
+}
+/* Style for the overall nav */
+nav {
+  display: flex; /* Set nav as a flex container */
+  justify-content: space-between; /* Space the logo and links apart */
+  align-items: center; /* Align items vertically in the center */
+  padding: 10px 0; /* Add some vertical padding */
+}
+
+/* Remove default list styles */
+nav ul {
+  display: flex; /* Make list items horizontal */
+  list-style-type: none; /* Remove bullets */
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the nav items */
+nav ul li {
+  margin: 0 15px; /* Add horizontal space between items */
+}
+
+/* Style the links */
+nav ul li a {
+  text-decoration: none;
+  color: #000; /* Change to your desired color */
+  font-size: 16px; /* Adjust font size */
+}
+
+/* Optional: Add hover effect */
+nav ul li a:hover {
+  color: #007bff; /* Bootstrap's primary blue, change if needed */
+}
+
+/* Optional: Style for the logo */
+.logo-img {
+  width: 120px; /* Adjust logo size as needed */
 }
 
